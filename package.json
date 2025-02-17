@@ -1,0 +1,37 @@
+{
+  "name": "battlenet-api-types",
+  "version": "1.0.0",
+  "description": "Typescript interfaces for Blizzard's Battle.net API",
+  "keywords": [
+    "battle-net",
+    "blizzard",
+    "world-of-warcraft",
+    "api",
+    "starcraft",
+    "diablo"
+  ],
+  "homepage": "https://github.com/mthomason12/battlenet-api-types#readme",
+  "bugs": {
+    "url": "https://github.com/mthomason12/battlenet-api-types/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthomason12/battlenet-api-types.git"
+  },
+  "license": "MIT",
+  "author": "M Thomason",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-docs": "npx typedoc --excludeExternals --externalPattern \"./node_modules/**\""
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.6",
+    "typedoc": "^0.27.7",
+    "typedoc-plugin-not-exported": "^0.1.6",
+    "typescript": "^5.7.3"
+  }
+}
