@@ -34,3 +34,4 @@ export * from './profile/character-soulbinds';
 export * from './profile/character-specializations';
 export * from './profile/character-statistics';
 export * from './profile/character-titles';
+export * from './profile/guild';

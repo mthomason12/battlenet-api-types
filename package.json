@@ -1,6 +1,6 @@
 {
   "name": "battlenet-api-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typescript interfaces for Blizzard's Battle.net API",
   "keywords": [
     "battle-net",
@@ -21,15 +21,14 @@
   "license": "MIT",
   "author": "M Thomason",
   "type": "module",
-  "main": "index.ts",
+  "types": "src/index.ts",
   "scripts": {
-    "build": "tsup",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-docs": "npx typedoc --excludeExternals --externalPattern \"./node_modules/**\""
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
-    "tsup": "^8.3.6",
     "typedoc": "^0.27.7",
     "typedoc-plugin-not-exported": "^0.1.6",
     "typescript": "^5.7.3"
