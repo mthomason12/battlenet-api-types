@@ -25,7 +25,7 @@
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-docs": "npx typedoc --excludeExternals --externalPattern \"./node_modules/**\""
+    "build-docs": "npx typedoc --entryPoints src/index.ts --excludeExternals --externalPattern \"./node_modules/**\""
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
