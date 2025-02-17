@@ -10,3 +10,7 @@ Current Status:
 - Starcraft API: 0%
 - Hearthstone API: 0%
 - Diablo III API: 0%
+
+### Installation
+
+```npm install battlenet-api-types```
