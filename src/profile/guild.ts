@@ -118,7 +118,7 @@ export interface APIGuildRoster {
     members: guildRosterMemberStruct[];
 }
 
-interface guildRosterMemberStruct {
+export interface guildRosterMemberStruct {
     character: {
         key: hrefStruct;
         name: string;
