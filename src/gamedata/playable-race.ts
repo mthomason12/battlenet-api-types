@@ -13,7 +13,7 @@ import { linksStruct, refStruct, mediaStruct, hrefStruct } from "../shared";
  */
 export interface APIPlayableRacesIndex {
     _links: linksStruct;
-    classes: refStruct[];
+    races: refStruct[];
 }
 
 /**
