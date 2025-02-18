@@ -10,5 +10,3 @@
 - Add Profession API
 - Add PvP Season API
 - Add PvP Tier API
-
-- Release as npm module of bnet API types
