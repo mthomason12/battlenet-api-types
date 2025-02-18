@@ -6,9 +6,6 @@
 - Add Mythic Keystone Dungeon API
 - Add Mythic Keystone Leaderboard API
 - Add Mythic Raid Leaderboard API
-- Add Playable Class API
-- Add Playable Race API
-- Add Playable Specialization API
 - Add Power Type API
 - Add Profession API
 - Add PvP Season API
