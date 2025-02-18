@@ -11,11 +11,11 @@ import { linksStruct, refStruct, mediaStruct, APIMediaStruct, spellTooltip } fro
  */
 export interface APIPlayableSpecializationsIndex {
     _links: linksStruct;
-    classes: refStruct[];
+    character_specializations: refStruct[];
 }
 
 /**
- * Playable Class
+ * Playable Specialization
  * 
  * /data/wow/playable-specialization/{{specId}}
  */
@@ -47,7 +47,7 @@ export interface APIPlayableSpecialization {
 }
 
 /** 
- * Playable Class Media
+ * Playable Specialization Media
  * 
  * /data/wow/media/playable-specialization/{{specId}}
  */
