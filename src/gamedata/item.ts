@@ -3,7 +3,7 @@
  * @module
  */
 
-import { APISearch, APISearchResult, hrefStruct, itemStatStruct, linksStruct, APIMediaStruct, mediaStruct, refStruct, regionedNameStruct, weaponStruct } from "../shared"
+import { APISearch, APISearchResult, hrefStruct, itemStatStruct, linksStruct, APIMediaStruct, mediaStruct, refStruct, regionedNameStruct, weaponStruct, itemStatValueStruct } from "../shared"
 
 /**
  * Item
@@ -58,6 +58,8 @@ export interface APIItem
         },
         unique_equipped: string,
         weapon?: weaponStruct,
+        armor?: itemStatValueStruct,
+        shield_block?: itemStatValueStruct,
         stats: itemStatStruct[],
         spells: {
             spell: refStruct,

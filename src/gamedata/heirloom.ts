@@ -2,7 +2,7 @@
  * Heirloom API
  */
 
-import { hrefStruct, idkeyStruct, itemStatStruct, linksStruct, refStruct, weaponStruct } from "../shared";
+import { hrefStruct, idkeyStruct, itemStatStruct, itemStatValueStruct, linksStruct, refStruct, weaponStruct } from "../shared";
 
 /**
  * Heirloom Index
@@ -51,6 +51,8 @@ export interface APIHeirloom {
                 name: string;
             }
             weapon?: weaponStruct;
+            armor?: itemStatValueStruct,
+            shield_block?: itemStatValueStruct,            
             stats?: itemStatStruct;
             upgrades: {
                 value: number;
