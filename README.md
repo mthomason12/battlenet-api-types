@@ -5,7 +5,7 @@ This is a work-in-progress, aiming to cover JSON responses from the Battle.net A
 [Documentation can be found here](https://mthomason12.github.io/battlenet-api-types/)
 
 Current Status:
-- World of Warcraft API: 70%
+- World of Warcraft API: 75%
 - World of Warcraft Classic API: 0%
 - Starcraft API: 0%
 - Hearthstone API: 0%

@@ -8,6 +8,8 @@ export * from './gamedata/connected-realm';
 export * from './gamedata/covenants';
 export * from './gamedata/creature';
 export * from './gamedata/item';
+export * from './gamedata/guild-crest';
+export * from './gamedata/heirloom';
 export * from './gamedata/journal';
 export * from './gamedata/media-search';
 export * from './gamedata/mount';

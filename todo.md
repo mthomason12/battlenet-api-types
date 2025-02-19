@@ -1,6 +1,4 @@
 - Add Azerite Essence API
-- Add Guild Crest API
-- Add Heirloom API
 - Add Modified Crafting API
 - Add Mythic Keystone Affix API
 - Add Mythic Keystone Dungeon API

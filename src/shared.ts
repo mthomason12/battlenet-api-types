@@ -59,6 +59,11 @@ export interface idNameStruct {
     name: string;
 }
 
+export interface keyValueStruct {
+    key: string;
+    value: string;
+}
+
 /**
  * At the top of practically every record.  Usually just contains self
  */
