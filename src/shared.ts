@@ -180,6 +180,14 @@ export interface itemStatStruct {
     }
 }
 
+export interface itemStatValueStruct {
+    value: number,
+    display: {
+        display_string: string,
+        color: rgbaColorStruct,
+    }
+}
+
 export interface rgbaColorStruct {
     r: number,
     g: number,

@@ -17,6 +17,8 @@ export * from './gamedata/pet';
 export * from './gamedata/playable-class';
 export * from './gamedata/playable-race';
 export * from './gamedata/playable-specialization';
+export * from './gamedata/power-type';
+export * from './gamedata/profession';
 export * from './gamedata/quest';
 export * from './gamedata/realm';
 export * from './gamedata/region';
