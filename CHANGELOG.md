@@ -1,5 +1,11 @@
 ### battlenet-api-types CHANGELOG
 
+#### 1.0.8
+
+- Add Power Type API
+- Add Profession API
+- Add missing armor and shield block properties to item and heirloom
+
 #### 1.0.7
 
 - Add Guild Crest API
