@@ -1,5 +1,10 @@
 ### battlenet-api-types CHANGELOG
 
+#### 1.0.10
+
+- Added missing APIConduitIndex and APIConduit in Covenants API
+- hunter_pets in APICharacterHunterPetsSummary corrected to be an array
+
 #### 1.0.9
 
 - Add PvP Season API

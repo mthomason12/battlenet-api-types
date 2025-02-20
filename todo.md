@@ -4,3 +4,4 @@
 - Add Mythic Keystone Dungeon API
 - Add Mythic Keystone Leaderboard API
 - Add Mythic Raid Leaderboard API
+- Add Spell API
