@@ -1,8 +1,9 @@
 /**
+ * 
  * Profession API Return Types
  */
 
-import { assetStruct, idkeyStruct, linksStruct, mediaStruct, refStruct } from "../shared";
+import { assetStruct, idkeyStruct, linksStruct, refStruct } from "../shared";
 
 /**
  * Professions Index
