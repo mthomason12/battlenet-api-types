@@ -11,7 +11,7 @@
  */
 
 import {
-    characterRef, factionStruct, genderStruct, hrefStruct, linksStruct, mediaStruct, positionStruct,
+    characterRef, factionStruct, genderStruct, hrefStruct, linksStruct, idkeyStruct, positionStruct,
     realmStruct, refStruct
 } from "../shared";
 
@@ -173,7 +173,7 @@ export interface APIAccountPet {
     }
     is_favorite?: boolean;
     name?: string;
-    creature_display: mediaStruct;
+    creature_display: idkeyStruct;
 }
 
 /**

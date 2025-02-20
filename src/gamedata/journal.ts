@@ -4,7 +4,7 @@
  * @module
  */
 
-import { APIMediaStruct, APISearch, APISearchResult, idNameStruct, linksStruct, mediaStruct, refStruct, regionedNameStruct } from "../shared";
+import { APIMediaStruct, APISearch, APISearchResult, idNameStruct, linksStruct, idkeyStruct, refStruct, regionedNameStruct } from "../shared";
 
 //region Journal Expansions
 
@@ -60,7 +60,7 @@ export interface APIJournalEncounter {
     creatures: {
         id?: number;
         name?: string;
-        creature_display?: mediaStruct;
+        creature_display?: idkeyStruct;
     };
     items: {
         id?: number;
@@ -85,7 +85,7 @@ export interface journalEncounterSection {
     title?: string;
     body_text?: string;
     sections?: journalEncounterSection[];
-    creature_display?: mediaStruct;
+    creature_display?: idkeyStruct;
 }
 
 /**
@@ -114,7 +114,7 @@ export interface APIJournalEncounterSearchItem extends APISearchResult {
         creatures: {
             id: number;
             name: regionedNameStruct;
-            creature_display?: mediaStruct;
+            creature_display?: idkeyStruct;
         };
         id: number;
         name: regionedNameStruct;
@@ -167,7 +167,7 @@ export interface APIJournalInstance {
     area?: idNameStruct;
     description?: string;
     encounters?: refStruct[];
-    media?: mediaStruct;
+    media?: idkeyStruct;
     minimum_level: number;
     category: {
         type: string;

@@ -4,7 +4,7 @@
  * @module
  */
 
-import { APISearch, APISearchResult, assetStruct, idkeyStruct, linksStruct, APIMediaStruct, mediaStruct, refStruct, regionedNameStruct } from "../shared";
+import { APISearch, APISearchResult, assetStruct, idkeyStruct, linksStruct, APIMediaStruct, refStruct, regionedNameStruct } from "../shared";
 
 //region Creature
 
@@ -97,7 +97,7 @@ export interface APICreatureFamily {
   id: number;
   name: string;
   specialization: refStruct;
-  media: mediaStruct;
+  media: idkeyStruct;
 }
 
 /**

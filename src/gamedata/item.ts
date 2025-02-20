@@ -4,7 +4,7 @@
  * @module
  */
 
-import { APISearch, APISearchResult, hrefStruct, itemStatStruct, linksStruct, APIMediaStruct, mediaStruct, refStruct, regionedNameStruct, weaponStruct, itemStatValueStruct } from "../shared"
+import { APISearch, APISearchResult, hrefStruct, itemStatStruct, linksStruct, APIMediaStruct, idkeyStruct, refStruct, regionedNameStruct, weaponStruct, itemStatValueStruct } from "../shared"
 
 /**
  * Item
@@ -24,7 +24,7 @@ export interface APIItem
     },
     level: number,
     required_level: number,
-    media: mediaStruct,
+    media: idkeyStruct,
     item_class: refStruct,
     item_subclass: refStruct,
     inventory_type: {
@@ -48,7 +48,7 @@ export interface APIItem
             name: string
         },
         name: string,
-        media: mediaStruct,
+        media: idkeyStruct,
         item_class: refStruct,
         item_subclass: refStruct,
         inventory_type: {

@@ -3,7 +3,7 @@
  * Playable Specialization API Return Types
  */
 
-import { linksStruct, refStruct, mediaStruct, APIMediaStruct, spellTooltip } from "../shared";
+import { linksStruct, refStruct, idkeyStruct, APIMediaStruct, spellTooltip } from "../shared";
 
 /**
  * Playable Specializations Index
@@ -31,7 +31,7 @@ export interface APIPlayableSpecialization {
         male: string;
         female: string;
     }
-    media?: mediaStruct;
+    media?: idkeyStruct;
     role: {
         name: string;
         type: string;

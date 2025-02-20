@@ -1,4 +1,4 @@
-## Typescript Interfaces for the Battle.net API
+# Typescript Interfaces for the Battle.net API
 
 This is a work-in-progress, aiming to cover JSON responses from the Battle.net API (https://develop.battle.net)
 
@@ -11,6 +11,6 @@ Current Status:
 - Hearthstone API: 0%
 - Diablo III API: 0%
 
-### Installation
+## Installation
 
 ```npm install battlenet-api-types```

@@ -4,7 +4,7 @@
  * @module
  */
 
-import { hrefStruct, idNameStruct, linksStruct, mediaStruct, refStruct, spellTooltip } from "../shared";
+import { hrefStruct, idNameStruct, linksStruct, idkeyStruct, refStruct, spellTooltip } from "../shared";
 
 //region Covenants
 
@@ -50,7 +50,7 @@ export interface APICovenant
     level: number;
     reward: refStruct;
   }[];
-  media?: mediaStruct;
+  media?: idkeyStruct;
 }
 
 /**

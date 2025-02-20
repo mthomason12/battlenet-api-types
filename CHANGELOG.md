@@ -1,5 +1,12 @@
 ### battlenet-api-types CHANGELOG
 
+#### 1.0.9
+
+- Add PvP Season API
+- Add PvP Tier API
+- Typedoc categories added 
+- All instances of "mediaStruct" merged into "idkeyStruct"
+
 #### 1.0.8
 
 - Add Power Type API

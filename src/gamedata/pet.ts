@@ -4,7 +4,7 @@
  * @module
  */
 
-import { APIMediaStruct, linksStruct, mediaStruct, refStruct } from "../shared";
+import { APIMediaStruct, linksStruct, idkeyStruct, refStruct } from "../shared";
 
 //region Pets
 
@@ -41,7 +41,7 @@ export interface APIPet {
     icon: string;
     creature: refStruct;
     is_random_creature_display: boolean;
-    media: mediaStruct;
+    media: idkeyStruct;
 }
 
 /**
@@ -95,7 +95,7 @@ export interface APIPetAbility {
         name: string;
     }
     rounds: number;
-    media: mediaStruct;
+    media: idkeyStruct;
 }
 
 /**

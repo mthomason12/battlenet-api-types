@@ -23,7 +23,7 @@ export interface genderStruct {
 export interface guildCrestStruct {
     emblem: {
         id: number;
-        media: mediaStruct;
+        media: idkeyStruct;
         color: {
             id: number;
             rgba: rgbaColorStruct;
@@ -31,7 +31,7 @@ export interface guildCrestStruct {
     };
     border: {
         id: number;
-        media: mediaStruct;
+        media: idkeyStruct;
         color: {
             id: number;
             rgba: rgbaColorStruct;
@@ -109,13 +109,6 @@ export interface positionStruct {
     facing: number;
 }
 
-/**
- * Media reference - id and key
- */
-export interface mediaStruct {
-    key: hrefStruct;
-    id: number;
-}
 
 export interface assetStruct {
     key: string;

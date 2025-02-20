@@ -4,7 +4,7 @@
  * 
  */
 
-import { linksStruct, refStruct, mediaStruct, hrefStruct } from "../shared";
+import { linksStruct, refStruct, idkeyStruct, hrefStruct } from "../shared";
 
 
 /**

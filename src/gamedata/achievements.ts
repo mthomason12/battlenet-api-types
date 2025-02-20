@@ -6,7 +6,7 @@
  */
 
 
-import { linksStruct, APIMediaStruct, mediaStruct, refStruct } from "../shared";
+import { linksStruct, APIMediaStruct, idkeyStruct, refStruct } from "../shared";
 
 /**
  * Achievements Index
@@ -46,7 +46,7 @@ export interface APIAchievement {
         child_criteria?: achievementChildCriteria[];
     }
     next_achievement?: refStruct;
-    media?: mediaStruct;
+    media?: idkeyStruct;
     display_order?: number;
 }
 

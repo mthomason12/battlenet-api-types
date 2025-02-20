@@ -4,7 +4,7 @@
  * @module
  */
 
-import { keyValueStruct, linksStruct, mediaStruct, rgbaColorStruct } from "../shared";
+import { keyValueStruct, linksStruct, idkeyStruct, rgbaColorStruct } from "../shared";
 
 /**
  * Guild Crest Components Index
@@ -16,11 +16,11 @@ export interface APIGuildCrestComponentsIndex {
     _links: linksStruct;
     emblems: {
         id: number;
-        media: mediaStruct;
+        media: idkeyStruct;
     }[]
     borders: {
         id: number;
-        media: mediaStruct;
+        media: idkeyStruct;
     }[]    
     colors: {
         emblems: {

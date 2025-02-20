@@ -4,7 +4,7 @@
  *
  */
 
-import { APIMediaStruct, hrefStruct, linksStruct, mediaStruct, refStruct } from "../shared";
+import { APIMediaStruct, hrefStruct, linksStruct, idkeyStruct, refStruct } from "../shared";
 
 /**
  * Playable Classes Index
@@ -33,7 +33,7 @@ export interface APIPlayableClass {
     }
     power_type: refStruct;
     specializations: refStruct[];
-    media?: mediaStruct;
+    media?: idkeyStruct;
     pvp_talent_slots: hrefStruct;
     playable_races: refStruct[];
     additional_power_types: refStruct[];

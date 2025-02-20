@@ -4,7 +4,7 @@
  * @module
  */
 
-import { linksStruct, characterRef, hrefStruct, mediaStruct, refStruct, rgbaColorStruct } from "../shared";
+import { linksStruct, characterRef, hrefStruct, idkeyStruct, refStruct, rgbaColorStruct } from "../shared";
 
 
 /**
@@ -38,7 +38,7 @@ export interface characterEquippedItem {
     }
     name: string;
     modified_appearance_id: number;
-    media: mediaStruct;
+    media: idkeyStruct;
     item_class: refStruct;
     item_subclass: refStruct;
     inventory_type: {
@@ -113,7 +113,7 @@ export interface characterEquippedItemSocket {
     }
     item: refStruct;
     display_string: string;
-    media: mediaStruct;
+    media: idkeyStruct;
 }
 
 /**
