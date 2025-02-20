@@ -72,8 +72,8 @@ export interface covenantClassAbility
  * @category Covenants API
  */
 export interface APISoulbindIndex {
-    _links: linksStruct;
-    soulbinds: refStruct[];
+  _links: linksStruct;
+  soulbinds: refStruct[];
 }
 
 /**
@@ -90,4 +90,38 @@ export interface APISoulbind {
     creature: refStruct;
     follower: idNameStruct;
     talent_tree: refStruct;
+}
+
+/**
+ * Conduit Index
+ * 
+ * /data/wow/conduit/index
+ * @category Covenants API
+ */
+export interface APIConduitIndex {
+  _links: linksStruct;
+  conduits: refStruct[];
+}
+
+
+/**
+ * Conduit
+ * 
+ * /data/wow/conduit/{conduitId}
+ * @category Covenants API
+ */
+export interface APIConduit {
+  _links: linksStruct;
+  id: number;
+  name: string;
+  item: refStruct;
+  socket_type: {
+    type: string;
+    name: string;
+  }
+  ranks: {
+    id: number;
+    tier: number;
+    spell_tooltip: spellTooltip;
+  }[]
 }
