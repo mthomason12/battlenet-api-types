@@ -22,5 +22,5 @@ export interface APICharacterHunterPetsSummary {
         creature: refStruct;
         slot: number;
         creature_display: idkeyStruct;
-    };
+    }[];
 }
