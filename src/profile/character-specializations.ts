@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Specializations API
  * Character Specializations API
  * @module
  */
@@ -8,7 +9,8 @@ import { linksStruct, refStruct, characterRef, spellTooltip } from "../shared";
 /**
  * Character Specializations Summary
  * 
- * /profile/wow/character/{realmSlug}/{characterName}/specializations 
+ * /profile/wow/character/{realmSlug}/{characterName}/specializations
+ * @category Character Specializations API 
  */
 export interface APICharacterSpecializationsSummary {
     _links: linksStruct;

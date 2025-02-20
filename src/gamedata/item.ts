@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Item API
  * Item API Return Types
  * @module
  */
@@ -7,7 +8,9 @@ import { APISearch, APISearchResult, hrefStruct, itemStatStruct, linksStruct, AP
 
 /**
  * Item
+ * 
  * /data/wow/item/{itemId}
+ * @category Item API
  * 
  */
 export interface APIItem
@@ -91,13 +94,17 @@ export interface APIItem
 
 /**
  * Item Search
- * /data/wow/search/item/
  * 
+ * /data/wow/search/item/
+ * @category Item API
  */
 export interface APIItemSearch extends APISearch {
     results: APIItemSearchItem[];
 }
 
+/**
+ * @category Item API
+ */
 export interface APIItemSearchItem extends APISearchResult
 {
     data: {
@@ -136,14 +143,18 @@ export interface APIItemSearchItem extends APISearchResult
 
 /**
  * Item Media
+ * 
  * /data/wow/media/item/{itemId}
+ * @category Item API
  */
 export interface APIItemMedia extends APIMediaStruct {    
 }
 
 /**
  * Item Classes Index
+ * 
  * /data/wow/item-class/index
+ * @category Item API
  */
 export interface APIItemClassesIndex {
     _links: linksStruct;
@@ -152,7 +163,9 @@ export interface APIItemClassesIndex {
 
 /**
  * Item Class
+ * 
  * /data/wow/item-class/{itemClassId}
+ * @category Item API
  */
 export interface APIItemClass {
     _links: linksStruct;
@@ -163,7 +176,9 @@ export interface APIItemClass {
 
 /**
  * Item Subclass
+ * 
  * /data/wow/item-class/{itemClassId}/item-subclass/{itemSubclassId}
+ * @category Item API
  */
 export interface APIItemSubclass {
     _links: linksStruct;
@@ -176,7 +191,9 @@ export interface APIItemSubclass {
 
 /**
  * Item Sets Index
+ * 
  * /data/wow/item-set/index
+ * @category Item API
  */
 export interface APIItemSetsIndex {
     _links: linksStruct;
@@ -185,7 +202,9 @@ export interface APIItemSetsIndex {
 
 /**
  * Item Set
+ * 
  * /data/wow/item-set/{itemSetId}
+ * @category Item API
  */
 export interface APIItemSet {
     _links: linksStruct;

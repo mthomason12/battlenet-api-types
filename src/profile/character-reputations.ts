@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Reputations API
  * Character Reputations API
  * @module
  */
@@ -9,6 +10,7 @@ import { linksStruct, characterRef, refStruct } from "../shared";
  * Character Reputations Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/reputations 
+ * @category Character Reputations API
  */
 export interface APICharacterReputationsSummary {
     _links: linksStruct;

@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Profession API
  * Character Profession API
  * @module
  */
@@ -9,6 +10,7 @@ import { refStruct, idNameStruct, linksStruct, characterRef } from "../shared";
  * Character Professions Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/professions 
+ * @category Character Profession API
  */
 export interface APICharacterProfessionsSummary {
     links: linksStruct;
@@ -17,6 +19,9 @@ export interface APICharacterProfessionsSummary {
     secondaries: characterProfession[];
 }
 
+/**
+ * @category Character Profession API
+ */
 export interface characterProfession {
     profession: refStruct;
     tiers: {

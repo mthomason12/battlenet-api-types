@@ -1,0 +1,16 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "entryPoints": ["src/index.ts"],
+    "excludeExternals": true,
+    "externalPattern": [
+        "**/node_modules/**"
+    ],
+    "navigation": {
+        "includeCategories": true,
+        "includeFolders": true,
+        "includeGroups": true,
+        "excludeReferences": false,
+        "compactFolders": true
+    }
+
+}

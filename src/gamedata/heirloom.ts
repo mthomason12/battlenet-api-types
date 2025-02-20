@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Heirloom API
  * Heirloom API
  */
 
@@ -8,7 +9,7 @@ import { hrefStruct, idkeyStruct, itemStatStruct, itemStatValueStruct, linksStru
  * Heirloom Index
  * 
  * /data/wow/heirloom/index
- * 
+ * @category Heirloom API
  */
 export interface APIHeirloomIndex {
     _links: linksStruct;
@@ -19,6 +20,7 @@ export interface APIHeirloomIndex {
  * Heirloom
  * 
  * /data/wow/heirloom/{heirloomId}
+ * @category Heirloom API
  */
 export interface APIHeirloom {
     _links: linksStruct;

@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Guild API
  * Guild API
  * @module
  */
@@ -9,6 +10,7 @@ import { linksStruct, factionStruct, realmStruct, guildCrestStruct, hrefStruct, 
  * Guild
  * 
  * /profile/wow/guild/{realmSlug}/{nameSlug}
+ * @category Guild API
  */
 export interface APIGuild {
     _links: linksStruct;
@@ -30,6 +32,7 @@ export interface APIGuild {
  * Guild Activity
  * 
  * /profile/wow/guild/{realmSlug}/{nameSlug}/activity
+ * @category Guild API
  */
 export interface APIGuildActivity {
     _links: linksStruct;
@@ -44,6 +47,9 @@ export interface APIGuildActivity {
 }
 
 
+/**
+ * @category Guild API
+ */
 export interface guildActivity {
     activity: {
         type: string;
@@ -51,6 +57,9 @@ export interface guildActivity {
     timestamp: number;
 }
 
+/**
+ * @category Guild API
+ */
 export interface guildEncounterActivity extends guildActivity {
     encounter_completed: {
         encounter: refStruct;
@@ -61,6 +70,9 @@ export interface guildEncounterActivity extends guildActivity {
     }
 }
 
+/**
+ * @category Guild API
+ */
 export interface guildCharacterAchievementActivity extends guildActivity {
     character_achievement: {
         character: characterRef;
@@ -72,6 +84,7 @@ export interface guildCharacterAchievementActivity extends guildActivity {
  * Guild Achievements
  * 
  * /profile/wow/guild/{realmSlug}/{nameSlug}/achievements
+ * @category Guild API
  */
 export interface APIGuildAchievements {
     _links: linksStruct;
@@ -87,6 +100,9 @@ export interface APIGuildAchievements {
     achievements: guildAchievement []
 }
 
+/**
+ * @category Guild API
+ */
 export interface guildAchievement {
     id: number;
     achievement: refStruct;
@@ -94,6 +110,9 @@ export interface guildAchievement {
     completed_timestamp: number;
 }
 
+/**
+ * @category Guild API
+ */
 export interface guildAchievementCriteriaStruct {
     id: number;
     amount?: number;
@@ -105,6 +124,7 @@ export interface guildAchievementCriteriaStruct {
  * Guild Roster
  * 
  * /profile/wow/guild/{realmSlug}/{nameSlug}/roster
+ * @category Guild API
  */
 export interface APIGuildRoster {
     _links: linksStruct;
@@ -118,6 +138,9 @@ export interface APIGuildRoster {
     members: guildRosterMemberStruct[];
 }
 
+/**
+ * @category Guild API
+ */
 export interface guildRosterMemberStruct {
     character: {
         key: hrefStruct;

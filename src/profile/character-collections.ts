@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Collections API
  * Character Collections API
  * @module
  */
@@ -10,6 +11,7 @@ import { characterRef, hrefStruct, idkeyStruct, linksStruct, refStruct } from ".
  * Character Collections Index
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/collections 
+ * @category Character Collections API
  */
 export interface APICharacterCollectionsIndex {
     _links: linksStruct;
@@ -24,6 +26,7 @@ export interface APICharacterCollectionsIndex {
  * Character Heirlooms Collection Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/collections/heirlooms
+ * @category Character Collections API
  */
 export interface APICharacterHeirloomsCollectionSummary {
     _links: linksStruct;
@@ -39,6 +42,7 @@ export interface APICharacterHeirloomsCollectionSummary {
  * Character Mounts Collection Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/collections/mounts
+ * @category Character Collections API
  */
 export interface APICharacterMountsCollectionSummary {
     _links: linksStruct;
@@ -53,6 +57,7 @@ export interface APICharacterMountsCollectionSummary {
  * Character Pets Collection Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/collections/pets
+ * @category Character Collections API
  */
 export interface APICharacterPetsCollectionSummary {
     _links: linksStruct;
@@ -80,6 +85,7 @@ export interface APICharacterPetsCollectionSummary {
  * Character Toys Collection Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/collections/toys
+ * @category Character Collections API
  */
 export interface APICharacterToysCollectionSummary {
     _links: linksStruct;
@@ -94,6 +100,7 @@ export interface APICharacterToysCollectionSummary {
  * Character Transmog Collection Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/collections/transmogs
+ * @category Character Collections API
  */
 export interface APICharacterTransmogCollectionSummary {
     _links: linksStruct;

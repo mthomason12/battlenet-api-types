@@ -1,5 +1,5 @@
 /**
- * 
+ * @categoryDescription Profession API
  * Profession API Return Types
  */
 
@@ -9,7 +9,7 @@ import { assetStruct, idkeyStruct, linksStruct, refStruct } from "../shared";
  * Professions Index
  * 
  * /data/wow/profession/index
- * 
+ * @category Profession API
  */
 export interface APIProfessionsIndex {
     _links: linksStruct;
@@ -21,7 +21,7 @@ export interface APIProfessionsIndex {
  * Profession
  * 
  * /data/wow/profession/{professionId}
- * 
+ * @category Profession API
  */
 export interface APIProfession {
     _links: linksStruct;
@@ -38,7 +38,9 @@ export interface APIProfession {
 
 /**
  * Profession Media
+ * 
  * /data/wow/media/profession/{professionId}
+ * @category Profession API
  * 
  */
 export interface APIProfessionMedia {
@@ -50,8 +52,9 @@ export interface APIProfessionMedia {
 
 /**
  * Profession Skill Tier
- * /data/wow/profession/{professionId}/skill-tier/{skillTierId}
  * 
+ * /data/wow/profession/{professionId}/skill-tier/{skillTierId}
+ * @category Profession API
  */
 export interface APIProfessionSkillTier {
     _links: linksStruct;
@@ -68,8 +71,9 @@ export interface APIProfessionSkillTier {
 
 /**
  * Recipe
- * /data/wow/recipe/{recipeId}
  * 
+ * /data/wow/recipe/{recipeId}
+ * @category Profession API
  */
 export interface APIRecipe {
     _links: linksStruct;
@@ -89,8 +93,9 @@ export interface APIRecipe {
 
 /**
  * Recipe Media
- * /data/wow/media/recipe/{professionId}
  * 
+ * /data/wow/media/recipe/{professionId}
+ * @category Profession API
  */
 export interface APIRecipeMedia {
     _links: linksStruct;

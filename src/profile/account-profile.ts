@@ -1,5 +1,7 @@
 
 /**
+ * @group Profile APIs
+ * @categoryDescription Account Profile API
  * Account Profile API Return Types
  * 
  * IMPORTANT: These all require a valid OAuth token from the user's Battle.net login, 
@@ -16,7 +18,9 @@ import {
 //region Account Profile Summary
 
 /**
- * Individual character from @see APIAccountProfileSummary
+ * Individual character from {@link APIAccountProfileSummary}
+ * @category Account Profile API
+ * @group Profile APIs
  */
 export interface APIAccountProfileCharacter {
     id?: number;
@@ -34,9 +38,11 @@ export interface APIAccountProfileCharacter {
 
 /**
  * Account Profile Summary
+ * 
  * /profile/user/wow
  * 
  * This is specific to the currently logged-in user's bnet account
+ * @category Account Profile API
  */
 export interface APIAccountProfileSummary {
     _links: linksStruct;
@@ -50,9 +56,11 @@ export interface APIAccountProfileSummary {
 
 /**
  * Protected Character Profile Summary
+ * 
  * /profile/user/wow/protected-character/realmID/
  * 
  * This is specific to the currently logged-in user's bnet account
+ * @category Account Profile API
  */
 export interface APIProtectedCharacterProfileSummary {
     _links: linksStruct;
@@ -79,9 +87,11 @@ export interface APIProtectedCharacterProfileSummary {
 
 /**
  * Account Collections Index
+ * 
  * /profile/user/wow/collections
  * 
  * This is specific to the currently logged-in user's bnet account
+ * @category Account Profile API
  */
 export interface APIAccountCollectionsIndex {
     _links: linksStruct;
@@ -95,7 +105,8 @@ export interface APIAccountCollectionsIndex {
 //region Account Heirlooms
 
 /**
- * Individual Heirloom from @see APIAccountHeirloomsCollectionSummary
+ * Individual Heirloom from {@link APIAccountHeirloomsCollectionSummary}
+ * @category Account Profile API
  */
 export interface APIAccountHeirloom {
     heirloom: refStruct;
@@ -106,9 +117,11 @@ export interface APIAccountHeirloom {
 
 /**
  * Account Heirlooms Collection Summary
+ * 
  * /profile/user/wow/collections/heirlooms
  * 
  * This is specific to the currently logged-in user's bnet account
+ * @category Account Profile API
  */
 export interface APIAccountHeirloomsCollectionSummary {
     _links: linksStruct;
@@ -118,7 +131,8 @@ export interface APIAccountHeirloomsCollectionSummary {
 //region Account Mounts
 
 /**
- * Individual Mount from  @see APIAccountMountsCollectionSummary
+ * Individual Mount from  {@link APIAccountMountsCollectionSummary}
+ * @category Account Profile API
  */
 export interface APIAccountMount {
     mount: refStruct;
@@ -126,9 +140,11 @@ export interface APIAccountMount {
 
 /**
  * Account Mounts Collection Summary
+ * 
  * /profile/user/wow/collections/mounts
  * 
  * This is specific to the currently logged-in user's bnet account
+ * @category Account Profile API
  */
 export interface APIAccountMountsCollectionSummary {
     _links: linksStruct;
@@ -138,7 +154,8 @@ export interface APIAccountMountsCollectionSummary {
 //region Account Pets
 
 /**
- * Individual pet from @see APIAccountPetsCollectionSummary
+ * Individual pet from {@link APIAccountPetsCollectionSummary}
+ * @category Account Profile API
  */
 export interface APIAccountPet {
     id: number;
@@ -161,9 +178,11 @@ export interface APIAccountPet {
 
 /**
  * Account Pets Collection Summary
+ * 
  * /profile/user/wow/collections/pets
  * 
  * This is specific to the currently logged-in user's bnet account
+ * @category Account Profile API
  */
 export interface APIAccountPetsCollectionSummary {
     _links: linksStruct;
@@ -174,7 +193,9 @@ export interface APIAccountPetsCollectionSummary {
 //region Account Toys
 
 /**
- * Individual item from @see APIAccountToysCollectionSummary
+ * Individual item from {@link APIAccountToysCollectionSummary}
+ * 
+ * @category Account Profile API
  */
 export interface APIAccountToy {
     toy: refStruct;
@@ -183,7 +204,9 @@ export interface APIAccountToy {
 
 /**
  * Account Toys Collection Summary
+ * 
  * /profile/user/wow/collections/toys
+ * @category Account Profile API
  */
 export interface APIAccountToysCollectionSummary {
     _links: linksStruct;
@@ -193,17 +216,20 @@ export interface APIAccountToysCollectionSummary {
 //region Account Transmog
 
 /**
- * Individual item from @see APIAccountTransmogCollectionSummary
+ * Individual item from {@link APIAccountTransmogCollectionSummary}
+ * @category Account Profile API
  */
 export type APIAccountTransmogAppearanceSet = refStruct;
 
 /**
- * Individual item from @see APIAccountTransmogSlot
+ * Individual item from {@link APIAccountTransmogSlot}
+ * @category Account Profile API
  */
 export type APIAccountTransmogAppearance = refStruct;
 
 /**
- * Individual item from @see APIAccountTransmogCollectionSummary
+ * Individual item from {@link APIAccountTransmogCollectionSummary}
+ * @category Account Profile API
  */
 export interface APIAccountTransmogSlot {
     slot: {
@@ -215,7 +241,9 @@ export interface APIAccountTransmogSlot {
 
 /**
  * Account Transmog Collection Summary
+ * 
  * /profile/user/wow/collections/transmogs
+ * @category Account Profile API
  */
 export interface APIAccountTransmogCollectionSummary {
     _links: linksStruct;

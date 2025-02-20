@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Statistics API
  * Character Statistics API
  * @module
  */
@@ -9,6 +10,7 @@ import { linksStruct, refStruct, characterRef } from "../shared";
  * Character Statistics Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/statistics 
+ * @category Character Statistics API
  */
 export interface APICharacterStatisticsSummary {
     _links: linksStruct;

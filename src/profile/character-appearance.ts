@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Appearance API
  * Character Appearance API
  * @module
  */
@@ -9,6 +10,7 @@ import { linksStruct, characterRef, refStruct, genderStruct, factionStruct, guil
  * Character Appearance Summary 
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/appearance
+ * @category Character Appearance API
  */
 export interface APICharacterAppearanceSummary {
     _links: linksStruct;
@@ -23,6 +25,9 @@ export interface APICharacterAppearanceSummary {
     customizations: characterCustomizationItem[];
 }
 
+/**
+ * @category Character Appearance API
+ */
 export interface characterAppearanceItem {
     id: number;
     slot: {
@@ -35,6 +40,9 @@ export interface characterAppearanceItem {
     subclass: number;
 }
 
+/**
+ * @category Character Appearance API
+ */
 export interface characterCustomizationItem {
     option: idNameStruct;
     choice: {

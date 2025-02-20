@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Pet API
  * Pet API Return Types
  * @module
  */
@@ -9,7 +10,9 @@ import { APIMediaStruct, linksStruct, mediaStruct, refStruct } from "../shared";
 
 /**
  * Pet
+ * 
  * /data/wow/pet/{{petId}}
+ * @category Pet API
  */
 export interface APIPet {
     _links: linksStruct;
@@ -43,7 +46,9 @@ export interface APIPet {
 
 /**
  * Pets Index
+ * 
  * /data/wow/pet/index
+ * @category Pet API
  */
 export interface APIPetIndex {
     _links: linksStruct;
@@ -54,7 +59,9 @@ export interface APIPetIndex {
 
 /**
  * Pet Media
+ * 
  * /data/wow/media/pet/{{petId}}
+ * @category Pet API
  */
 export interface APIPetMedia extends APIMediaStruct {
 }
@@ -63,7 +70,9 @@ export interface APIPetMedia extends APIMediaStruct {
 
 /**
  * Pet Abilities Index
+ * 
  * /data/wow/pet-ability/index
+ * @category Pet API
  */
 export interface APIPetAbilitiesIndex {
     _links: linksStruct;
@@ -72,7 +81,9 @@ export interface APIPetAbilitiesIndex {
 
 /**
  * Pet Ability
+ * 
  * /data/wow/pet-ability/{{petAbilityId}}
+ * @category Pet API
  */
 export interface APIPetAbility {
     _links: linksStruct;
@@ -89,7 +100,9 @@ export interface APIPetAbility {
 
 /**
  * Pet Ability Media
+ * 
  * /data/wow/media/pet-ability/{{petAbilityId}}
+ * @category Pet API
  */
 export interface APIPetAbilityMedia extends APIMediaStruct {
 }

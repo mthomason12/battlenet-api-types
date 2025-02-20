@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Reputation API
  * Reputation API Return Types
  * @module
  */
@@ -11,6 +12,7 @@ import { factionStruct, hrefStruct, linksStruct, refStruct } from "../shared";
  * Reputation Faction Index
  * 
  * /data/wow/reputation-faction/index
+ * @category Reputation API
  */
 export interface APIReputationFactionIndex {
     _links: linksStruct;
@@ -21,6 +23,7 @@ export interface APIReputationFactionIndex {
  * Reputation Faction 
  * 
  * /data/wow/reputation-faction/{{reputationFactionId}}
+ * @category Reputation API
  */
 export interface APIReputationFaction {
     _links?: linksStruct;
@@ -41,6 +44,7 @@ export interface APIReputationFaction {
  * Reputation Tier Index
  * 
  * /data/wow/reputation-tier/index
+ * @category Reputation API
  */
 export interface APIReputationTierIndex {
     _links: linksStruct;
@@ -51,6 +55,7 @@ export interface APIReputationTierIndex {
  * Reputation Tier
  * 
  * /data/wow/reputation-tier/{{reputationTierId}}
+ * @category Reputation API
  */
 export interface APIReputationTier {
     _links?: linksStruct;

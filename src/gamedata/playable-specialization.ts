@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Playable Specialization API
  * Playable Specialization API Return Types
  */
 
@@ -8,6 +9,7 @@ import { linksStruct, refStruct, mediaStruct, APIMediaStruct, spellTooltip } fro
  * Playable Specializations Index
  * 
  * /data/wow/playable-specialization/index 
+ * @category Playable Specialization API
  */
 export interface APIPlayableSpecializationsIndex {
     _links: linksStruct;
@@ -18,6 +20,7 @@ export interface APIPlayableSpecializationsIndex {
  * Playable Specialization
  * 
  * /data/wow/playable-specialization/{{specId}}
+ * @category Playable Specialization API
  */
 export interface APIPlayableSpecialization {
     _links: linksStruct;
@@ -50,6 +53,7 @@ export interface APIPlayableSpecialization {
  * Playable Specialization Media
  * 
  * /data/wow/media/playable-specialization/{{specId}}
+ * @category Playable Specialization API
  */
 export interface APIPlayableSpecializationMedia extends APIMediaStruct {
 }

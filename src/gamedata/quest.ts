@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Quest API
  * Quest API Return Types
  * @module
  */
@@ -9,7 +10,9 @@ import { factionStruct, hrefStruct, linksStruct, moneyStruct, refStruct } from "
 
 /**
  * Quests Index
+ * 
  * /data/wow/pet/index
+ * @category Quest API
  */
 export interface APIQuestIndex {
     _links: linksStruct;
@@ -21,7 +24,9 @@ export interface APIQuestIndex {
 
 /**
  * Quest
+ * 
  * /data/wow/quest/{{questId}}
+ * @category Quest API
  */
 export interface APIQuest {
     _links: linksStruct;
@@ -48,6 +53,9 @@ export interface APIQuest {
 }
 
 
+/**
+ * @category Quest API
+ */
 export interface QuestRewardItem {
     item?: refStruct;
     requirements?: {
@@ -60,7 +68,9 @@ export interface QuestRewardItem {
 
 /**
  * Quest Categories Index
+ * 
  * /data/wow/quest/category/index
+ * @category Quest API
  */
 export interface APIQuestCategoriesIndex {
     _links: linksStruct;
@@ -69,7 +79,9 @@ export interface APIQuestCategoriesIndex {
 
 /**
  * Quest Category
+ * 
  * /data/wow/quest/category/{{questCategoryId}}
+ * @category Quest API
  */
 export interface APIQuestCategory {
     _links?: linksStruct;
@@ -82,7 +94,9 @@ export interface APIQuestCategory {
 
 /**
  * Quest Areas Index
+ * 
  * /data/wow/quest/area/index
+ * @category Quest API
  */
 export interface APIQuestAreasIndex {
     _links: linksStruct;
@@ -91,7 +105,9 @@ export interface APIQuestAreasIndex {
 
 /**
  * Quest Area
- * /data/wow/quest/area/index
+ * 
+ * /data/wow/quest/area/{{questAreaID}}
+ * @category Quest API
  */
 export interface APIQuestArea {
     _links: linksStruct;
@@ -104,7 +120,9 @@ export interface APIQuestArea {
 
 /**
  * Quest Types Index
+ * 
  * /data/wow/quest/type/index
+ * @category Quest API
  */
 export interface APIQuestTypesIndex {
     _links: linksStruct;
@@ -113,7 +131,9 @@ export interface APIQuestTypesIndex {
 
 /**
  * Quest Type
+ * 
  * /data/wow/quest/type/{{questTypeId}}
+ * @category Quest API
  */
 export interface APIQuestType {
     _links?: linksStruct;

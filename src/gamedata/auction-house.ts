@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Auction House API
  * Auction House API Return Types
  * @module
  */
@@ -13,7 +14,7 @@ import { hrefStruct, linksStruct } from "../shared";
  * Auctions
  * 
  * /data/wow/connected-realm/{connectedRealmId}/auctions
- * 
+ * @category Auction House API
  */
 export interface APIAuctions {
     _links: linksStruct;
@@ -23,6 +24,7 @@ export interface APIAuctions {
 
 /**
  * Individual auction from @see APIAuctions
+ * @category Auction House API
  */
 export interface APIAuctionsItem {
     id: number;
@@ -48,6 +50,7 @@ export interface APIAuctionsItem {
  * /data/wow/auctions/commodities
  * 
  * This currently appears to be broken, returning a truncated result
+ * @category Auction House API
  */
 export interface APICommodities {
 

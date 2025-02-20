@@ -1,6 +1,8 @@
 /**
+ * @category Achievements API
  * Achievement API Return Types
  * @module
+ * 
  */
 
 
@@ -10,6 +12,7 @@ import { linksStruct, APIMediaStruct, mediaStruct, refStruct } from "../shared";
  * Achievements Index
  * 
  * /data/wow/achievement/index
+ * @category Achievements API
  */
 export interface APIAchievementsIndex {
     _links: linksStruct;
@@ -22,6 +25,7 @@ export interface APIAchievementsIndex {
  * Achievement
  * 
  * /data/wow/achievement/{achievementId}
+ * @category Achievements API
  */
 export interface APIAchievement {
     _links: linksStruct;
@@ -49,6 +53,7 @@ export interface APIAchievement {
 
 /**
  * Part of APIAchievement
+ * @category Achievements API
  */
 export interface achievementChildCriteria {
     id: number;
@@ -63,6 +68,7 @@ export interface achievementChildCriteria {
  * Achievement Media
  * 
  * /data/wow/media/achievement/{achievementId}
+ * @category Achievements API
  */
 export interface APIAchievementMedia extends APIMediaStruct {
 }
@@ -73,6 +79,7 @@ export interface APIAchievementMedia extends APIMediaStruct {
  * Achievement Categories Index
  * 
  * /data/wow/media/achievement-category/index
+ * @category Achievements API
  */
 export interface APIAchievementCategoriesIndex {
     _links: linksStruct;
@@ -84,6 +91,7 @@ export interface APIAchievementCategoriesIndex {
  * Achievement Category
  * 
  * /data/wow/media/achievement-category/{achievementCategoryId}
+ * @category Achievements API
  */
 export interface APIAchievementCategory {
     _links: linksStruct;

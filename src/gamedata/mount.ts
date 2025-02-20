@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Mount API
  * Mount API Return Types
  * @module
  */
@@ -8,7 +9,9 @@ import { APISearch, APISearchResult, factionStruct, hrefStruct, linksStruct, ref
 
 /**
  * Mount Index
+ * 
  * /data/wow/mount/index
+ * @category Mount API
  */
 export interface APIMountIndex {
     _links: linksStruct;
@@ -18,7 +21,9 @@ export interface APIMountIndex {
 
 /**
  * Mount
+ * 
  * /data/wow/mount/{{mountId}}
+ * @category Mount API
  */
 export interface APIMount {
     _links: linksStruct;
@@ -38,6 +43,9 @@ export interface APIMount {
     should_exclude_if_uncollected?: boolean;
 }
 
+/**
+ * @category Mount API
+ */
 export interface mountDisplaysStruct
 {
   key: hrefStruct;
@@ -46,13 +54,17 @@ export interface mountDisplaysStruct
 
 /**
  * Mount Search
- * /data/wow/search/mount
  * 
+ * /data/wow/search/mount
+ * @category Mount API
  */
 export interface APIMountSearch extends APISearch {
     results: APIMountSearchItem[];
 }
 
+/**
+ * @category Mount API
+ */
 export interface APIMountSearchItem extends APISearchResult {
     data: {
         creature_displays?: mountDisplaysStruct[];

@@ -1,13 +1,16 @@
 /**
+ * @categoryDescription Guild Crest API
  * Guild Crest API
+ * @module
  */
 
 import { keyValueStruct, linksStruct, mediaStruct, rgbaColorStruct } from "../shared";
 
 /**
  * Guild Crest Components Index
- * /data/wow/guild-crest/index
  * 
+ * /data/wow/guild-crest/index
+ * @category Guild Crest API
  */
 export interface APIGuildCrestComponentsIndex {
     _links: linksStruct;
@@ -38,7 +41,9 @@ export interface APIGuildCrestComponentsIndex {
 
 /**
  * Guild Crest Border Media
+ * 
  * /data/wow/media/guild-crest/border/{borderId}
+ * @category Guild Crest API
  * 
  */
 export interface APIGuildCrestBorderMedia {
@@ -50,8 +55,9 @@ export interface APIGuildCrestBorderMedia {
 
 /**
  * Guild Crest Emblem Media
- * /data/wow/media/guild-crest/emblem/{emblemId}
  * 
+ * /data/wow/media/guild-crest/emblem/{emblemId}
+ * @category Guild Crest API
  */
 export interface APIGuildCrestEmblemMedia {
     _links: linksStruct;

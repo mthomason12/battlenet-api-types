@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Achievements API
  * Character Achievements API
  * @module
  */
@@ -9,6 +10,7 @@ import { linksStruct, refStruct, characterRef, hrefStruct } from "../shared";
  * Character Achievements Summary 
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/achievements
+ * @category Character Achievements API
  */
 export interface APICharacterAchievementsSummary {
     _links: linksStruct;
@@ -25,7 +27,8 @@ export interface APICharacterAchievementsSummary {
 }
 
 /**
- * Part of @see APICharacterAchievementsSummary
+ * Part of {@link APICharacterAchievementsSummary}
+ * @category Character Achievements API
  */
 export interface characterAchievementCriteria
 {
@@ -38,6 +41,7 @@ export interface characterAchievementCriteria
  * Character Achievements Statistics 
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/achievements/statistics
+ * @category Character Achievements API
  */
 export interface APICharacterAchievementsStatistics {
     _links: linksStruct;    
@@ -51,6 +55,9 @@ export interface APICharacterAchievementsStatistics {
     categories: characterAchievementStatisticsCategory[];
 }
 
+/**
+ * @category Character Achievements API
+ */
 export interface characterAchievementStatisticsCategory {
     id: number;
     name: string;

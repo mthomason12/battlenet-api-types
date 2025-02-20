@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Mythic Keystone API
  * Character Mythic Keystone API
  * @module
  */
@@ -10,6 +11,7 @@ import { characterRef, idkeyStruct, linksStruct, refStruct, rgbaColorStruct } fr
  * Character Mythic Keystone Profile Index
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/mythic-keystone-profile
+ * @category Character Mythic Keystone API
  */
 export interface APICharacterMythicKeystoneProfileIndex {
     _links: linksStruct;
@@ -28,6 +30,7 @@ export interface APICharacterMythicKeystoneProfileIndex {
  * Character Mythic Keystone Season Details
  *  
  * /profile/wow/character/{realmSlug}/{characterName}/mythic-keystone-profile/season/{seasonId}
+ * @category Character Mythic Keystone API
  */
 export interface APICharacterMythicKeystoneSeasonDetails {
     $id: number;

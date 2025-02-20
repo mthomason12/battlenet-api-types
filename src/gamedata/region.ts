@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Region API
  * Region API Return Types
  * @module
  */
@@ -8,7 +9,9 @@ import { hrefStruct, linksStruct } from "../shared";
 
 /**
  * Regions Index
+ * 
  * /data/wow/region/index
+ * @category Region API
  */
 export interface APIRegionsIndex
 {
@@ -19,7 +22,9 @@ export interface APIRegionsIndex
 
 /**
  * Region
- * /data/wow/region/{{realmId}}
+ * 
+ * /data/wow/region/{{regionId}}
+ * @category Region API
  */
 export interface APIRegion {
     _links: linksStruct;

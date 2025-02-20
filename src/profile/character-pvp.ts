@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character PvP API
  * Character PvP API
  * @module
  */
@@ -10,6 +11,7 @@ import { linksStruct, hrefStruct, idNameStruct, characterRef, factionStruct, idk
  * Character PvP Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/pvp-summary
+ * @category Character PvP API
  */
 export interface APICharacterPvPSummary {
     _links: linksStruct;
@@ -31,7 +33,8 @@ export interface APICharacterPvPSummary {
 /**
  * Character PvP Bracket Statistics
  * 
- * /profile/wow/character/{realmSlug}/{characterName}/pvp-bracket/{pvpBracket} 
+ * /profile/wow/character/{realmSlug}/{characterName}/pvp-bracket/{pvpBracket}
+ * @category Character PvP API 
  */
 export interface APICharacterPvPBracketStatistics {
     _links: linksStruct;

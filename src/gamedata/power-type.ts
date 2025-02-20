@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Power Type API
  * Power Type API Return Types
  */
 
@@ -9,7 +10,7 @@ import { linksStruct, refStruct } from "../shared";
  * Power Types Index
  * 
  * /data/wow/power-type/index
- * 
+ * @category Power Type API
  */
 export interface APIPowerTypesIndex {
     _links: linksStruct;
@@ -21,6 +22,7 @@ export interface APIPowerTypesIndex {
  * Power Type
  * 
  * /data/wow/power-type/{powerTypeId}
+ * @category Power Type API
  */
 export interface APIPowerType {
     _links: linksStruct;

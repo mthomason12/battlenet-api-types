@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Connected Realm API
  * Connected Realm API Return Types
  * @module
  */
@@ -10,7 +11,7 @@ import { APISearch, APISearchResult, hrefStruct, linksStruct, refStruct, regione
  * Connected Realms Index
  * 
  * /data/wow/connected-realm/index
- * 
+ * @category Connected Realm API
  */
 export interface APIConnectedRealmsIndex {
     _links: linksStruct;
@@ -22,6 +23,7 @@ export interface APIConnectedRealmsIndex {
  * Connected Realm
  * 
  * /data/wow/connected-realm/{connectedRealmId}
+ * @category Connected Realm API
  */
 export interface APIConnectedRealm {
     _links: linksStruct;
@@ -42,6 +44,7 @@ export interface APIConnectedRealm {
 
 /**
  * Individual realm from @see APIConnectedRealm
+ * @category Connected Realm API
  */
 export interface APIConnectedRealmItem {
     id: number;
@@ -63,11 +66,15 @@ export interface APIConnectedRealmItem {
  * Connected Realm Search
  * 
  * /data/wow/search/connected-realm
+ * @category Connected Realm API
  */
 export interface APIConnectedRealmSearch extends APISearch {
     results: APIConnectedRealmSearchItem[];
 }
 
+/**
+ * @category Connected Realm API
+ */
 export interface APIConnectedRealmSearchItem  extends APISearchResult {
     data: {
         realms: {

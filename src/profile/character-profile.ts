@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Profile API
  * Character Profile API
  * @module
  */
@@ -9,6 +10,7 @@ import { factionStruct, genderStruct, hrefStruct, linksStruct, realmStruct, refS
  * Character Profile Summary 
  * 
  * /profile/wow/character/{realmSlug}/{characterName}
+ * @category Character Profile API
  */
 export interface APICharacterProfileSummary {
     _links: linksStruct;
@@ -66,6 +68,7 @@ export interface APICharacterProfileSummary {
  * Character Profile Statis 
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/status
+ * @category Character Profile API
  */
 export interface APICharacterProfileStatus {
     _links: linksStruct;

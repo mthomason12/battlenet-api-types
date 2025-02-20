@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Covenants API
  * Covenants API Return Types
  * @module
  */
@@ -11,13 +12,16 @@ import { hrefStruct, idNameStruct, linksStruct, mediaStruct, refStruct, spellToo
  * Covenants Index
  * 
  * /data/wow/covenants/index
- * 
+ * @category Covenants API
  */
 export interface APICovenantIndex {
   _links: linksStruct;
   covenants: APICovenantItem[];
 }
 
+/**
+ * @category Covenants API
+ */
 export interface APICovenantItem {
   id: number;
   name: string;
@@ -28,7 +32,7 @@ export interface APICovenantItem {
  * Covenant
  * 
  * /data/wow/covenants/{covenantID}
- * 
+ * @category Covenants API
  */
 export interface APICovenant 
 {
@@ -49,6 +53,9 @@ export interface APICovenant
   media?: mediaStruct;
 }
 
+/**
+ * @category Covenants API
+ */
 export interface covenantClassAbility
 {
   id: number;
@@ -62,7 +69,7 @@ export interface covenantClassAbility
  * Soulbind Index
  * 
  * /data/wow/soulbind/index
- * 
+ * @category Covenants API
  */
 export interface APISoulbindIndex {
     _links: linksStruct;
@@ -73,7 +80,7 @@ export interface APISoulbindIndex {
  * Soulbind
  * 
  * /data/wow/soulbind/{soulbindID}
- * 
+ * @category Covenants API
  */
 export interface APISoulbind {
     _links: linksStruct;

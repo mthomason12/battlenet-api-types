@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Playable Race API
  * Playable Race API Return Types
  * 
  */
@@ -10,6 +11,7 @@ import { linksStruct, refStruct, mediaStruct, hrefStruct } from "../shared";
  * Playable Races Index
  * 
  * /data/wow/playable-race/index 
+ * @category Playable Race API
  */
 export interface APIPlayableRacesIndex {
     _links: linksStruct;
@@ -20,6 +22,7 @@ export interface APIPlayableRacesIndex {
  * Playable Race
  * 
  * /data/wow/playable-race/{{raceId}}
+ * @category Playable Race API
  */
 export interface APIPlayableRace {
     _links: linksStruct;

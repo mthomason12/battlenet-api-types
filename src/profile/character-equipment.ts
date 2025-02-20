@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Equipment API
  * Character Equipment API
  * @module
  */
@@ -10,6 +11,7 @@ import { linksStruct, characterRef, hrefStruct, mediaStruct, refStruct, rgbaColo
  * Character Equipment Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/equipment 
+ * @category Character Equipment API
  */
 export interface APICharacterEquipmentSummary {
     _links: linksStruct;
@@ -17,6 +19,9 @@ export interface APICharacterEquipmentSummary {
     equipped_items: characterEquippedItem[];
 }
 
+/**
+ * @category Character Equipment API
+ */
 export interface characterEquippedItem {
     item: refStruct;
     sockets: characterEquippedItemSocket[];
@@ -98,6 +103,9 @@ export interface characterEquippedItem {
     }
 }
 
+/**
+ * @category Character Equipment API
+ */
 export interface characterEquippedItemSocket {
     socket_type: {
         name: string;
@@ -108,6 +116,9 @@ export interface characterEquippedItemSocket {
     media: mediaStruct;
 }
 
+/**
+ * @category Character Equipment API
+ */
 export interface characterEquippedItemStat {
     type: {
         name: string;

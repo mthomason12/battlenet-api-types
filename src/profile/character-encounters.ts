@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Character Encounters API
  * Character Encounters API
  * @module
  */
@@ -10,6 +11,7 @@ import { characterRef, hrefStruct, linksStruct, refStruct } from "../shared";
  * Character Encounters Summary
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/encounters 
+ * @category Character Encounters API
  */
 export interface APICharacterEncountersSummary {
     _links: linksStruct;
@@ -22,6 +24,7 @@ export interface APICharacterEncountersSummary {
  * Character Dungeons
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/encounters/dungeons
+ * @category Character Encounters API
  */
 export interface APICharacterDungeons {
     _links: linksStruct;
@@ -32,6 +35,7 @@ export interface APICharacterDungeons {
  * Character Raids
  * 
  * /profile/wow/character/{realmSlug}/{characterName}/encounters/raids
+ * @category Character Encounters API
  */
 export interface APICharacterRaids {
     _links: linksStruct;
@@ -39,7 +43,8 @@ export interface APICharacterRaids {
 }
 
 /**
- * Part of both @see APICharacterDungeons and @see APICharacterRaids
+ * Part of both {@link APICharacterDungeons} and {@link APICharacterRaids}
+ * @category Character Encounters API
  */
 export interface characterInstanceExpansionItem {
     expansion: refStruct;

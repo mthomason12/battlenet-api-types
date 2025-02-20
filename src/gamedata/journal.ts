@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Journal API
  * Journal API Return Types
  * @module
  */
@@ -9,7 +10,9 @@ import { APIMediaStruct, APISearch, APISearchResult, idNameStruct, linksStruct, 
 
 /**
  * Journal Expansions Index
+ * 
  * /data/wow/journal-expansion/index
+ * @category Journal API
  */
 export interface APIJournalExpansionsIndex {
     _links: linksStruct;
@@ -18,7 +21,9 @@ export interface APIJournalExpansionsIndex {
 
 /**
  * Journal Expansion
+ * 
  * /data/wow/journal-expansion/{journalExpansionId}
+ * @category Journal API
  */
 export interface APIJournalExpansion {
     _links?: linksStruct;
@@ -32,7 +37,9 @@ export interface APIJournalExpansion {
 
 /**
  * Journal Encounters Index
+ * 
  * /data/wow/journal-encounter/index
+ * @category Journal API
  */
 export interface APIJournalEncountersIndex {
     _links: linksStruct;
@@ -41,7 +48,9 @@ export interface APIJournalEncountersIndex {
 
 /**
  * Journal Encounter
+ * 
  * /data/wow/journal-encounter/{journalEncounterId}
+ * @category Journal API
  */
 export interface APIJournalEncounter {
     _links: linksStruct;
@@ -68,6 +77,9 @@ export interface APIJournalEncounter {
     }[]
 }
 
+/**
+ * @category Journal API
+ */
 export interface journalEncounterSection {
     id?: number;
     title?: string;
@@ -78,13 +90,17 @@ export interface journalEncounterSection {
 
 /**
  * Journal Encounter Search
- * /data/wow/search/journal-encounter
  * 
+ * /data/wow/search/journal-encounter
+ * @category Journal API
  */
 export interface APIJournalEncounterSearch extends APISearch {
     results: APIJournalEncounterSearchItem[];
 }
 
+/**
+ * @category Journal API
+ */
 export interface APIJournalEncounterSearchItem extends APISearchResult {
     data: {
         instance: {
@@ -116,6 +132,9 @@ export interface APIJournalEncounterSearchItem extends APISearchResult {
     }
 }
 
+/**
+ * @category Journal API
+ */
 export interface journalEncounterSearchSection {
     id: number;
     title: regionedNameStruct;
@@ -126,7 +145,9 @@ export interface journalEncounterSearchSection {
 
 /**
  * Journal Instances Index
+ * 
  * /data/wow/journal-instance/index
+ * @category Journal API
  */
 export interface APIJournalInstancesIndex {
     _links: linksStruct;
@@ -135,7 +156,9 @@ export interface APIJournalInstancesIndex {
 
 /**
  * Journal Instance
+ * 
  * /data/wow/journal-instance/{journalInstanceId}
+ * @category Journal API
  */
 export interface APIJournalInstance {
     _links?: linksStruct;
@@ -154,7 +177,9 @@ export interface APIJournalInstance {
 
 /**
  * Journal Instance Media
+ * 
  * /data/wow/media/journal-instance/{journalInstanceId}
+ * @category Journal API
  */
 export interface APIJournalInstanceMedia extends APIMediaStruct {
 }

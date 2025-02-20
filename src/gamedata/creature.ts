@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Creature API
  * Creature API Return Types
  * @module
  */
@@ -9,8 +10,9 @@ import { APISearch, APISearchResult, assetStruct, idkeyStruct, linksStruct, APIM
 
 /**
  * Creature
- * /data/wow/creature/{creatureId}
  * 
+ * /data/wow/creature/{creatureId}
+ * @category Creature API
  */
 export interface APICreature {
     _links: linksStruct;
@@ -27,13 +29,17 @@ export interface APICreature {
 
 /**
  * Creature Search
- * /data/wow/search/creature/
  * 
+ * /data/wow/search/creature/
+ * @category Creature API
  */
 export interface APICreatureSearch extends APISearch {
     results: APICreatureSearchItem[];
 }
 
+/**
+ * @category Creature API
+ */
 export interface APICreatureSearchItem extends APISearchResult {
     data: {
         creature_displays?: {
@@ -57,8 +63,9 @@ export interface APICreatureSearchItem extends APISearchResult {
 
 /**
  * Creature Display Media
- * /data/wow/media/creature-display/{creatureDisplayId}
  * 
+ * /data/wow/media/creature-display/{creatureDisplayId}
+ * @category Creature API
  */
 export interface APICreatureDisplayMedia {
     _links: linksStruct;
@@ -70,8 +77,9 @@ export interface APICreatureDisplayMedia {
 
 /**
  * Creature Families Index
- * /data/wow/creature-family/index
  * 
+ * /data/wow/creature-family/index
+ * @category Creature API
  */
 export interface APICreatureFamiliesIndex {
     _links: linksStruct;
@@ -80,8 +88,9 @@ export interface APICreatureFamiliesIndex {
 
 /**
  * Creature Family
- * /data/wow/creature-family/{creatureFamilyId}
  * 
+ * /data/wow/creature-family/{creatureFamilyId}
+ * @category Creature API
  */
 export interface APICreatureFamily {
   _links: linksStruct;
@@ -93,7 +102,9 @@ export interface APICreatureFamily {
 
 /**
  * Creature Family Media
+ * 
  * /data/wow/media/creature-family/{creatureFamilyId}
+ * @category Creature API
  */
 export interface APICreatureFamilyMedia extends APIMediaStruct {    
 }
@@ -102,8 +113,9 @@ export interface APICreatureFamilyMedia extends APIMediaStruct {
 
 /**
  * Creature Types Index
- * /data/wow/creature-type/index
  * 
+ * /data/wow/creature-type/index
+ * @category Creature API
  */
 export interface APICreatureTypesIndex {
     _links: linksStruct;
@@ -112,8 +124,9 @@ export interface APICreatureTypesIndex {
 
 /**
  * Creature Type
- * /data/wow/creature-type/{creatureTypeId}
  * 
+ * /data/wow/creature-type/{creatureTypeId}
+ * @category Creature API
  */
 export interface APICreatureType {
   _links: linksStruct;

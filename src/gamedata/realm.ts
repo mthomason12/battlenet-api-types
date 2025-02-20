@@ -1,4 +1,5 @@
 /**
+ * @categoryDescription Realm API
  * Realm API Return Types
  * @module
  */
@@ -7,7 +8,9 @@ import { APISearch, APISearchResult, hrefStruct, linksStruct, refStruct, regione
 
 /**
  * Realms Index
+ * 
  * /data/wow/realm/index
+ * @category Realm API
  */
 export interface APIRealmsIndex
 {
@@ -17,6 +20,7 @@ export interface APIRealmsIndex
 
 /**
  * Individual index entry from @see APIRealmsIndex
+ * @category Realm API
  */
 export interface APIRealmsIndexEntry extends refStruct
 {
@@ -25,7 +29,9 @@ export interface APIRealmsIndexEntry extends refStruct
 
 /**
  * Realm
+ * 
  * /data/wow/realm/{{realmId}}
+ * @category Realm API
  */
 export interface APIRealm {
     _links: linksStruct;
@@ -46,12 +52,17 @@ export interface APIRealm {
 
 /**
  * Realm Search
+ * 
  * /data/wow/search/realm
+ * @category Realm API
  */
 export interface APIRealmSearch extends APISearch {
     results: APIRealmSearchResult[];
 }
 
+/**
+ * @category Realm API
+ */
 export interface APIRealmSearchResult extends APISearchResult {
     id: number;
     is_tournament: string;
