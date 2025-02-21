@@ -1,5 +1,9 @@
 ### battlenet-api-types CHANGELOG
 
+#### 1.1.1
+
+- APICharacterTransmogCollectionSummary: slots.appearances should be an array
+
 #### 1.1.0
 
 - Add Spell API
