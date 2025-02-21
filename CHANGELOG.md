@@ -1,6 +1,10 @@
 ### battlenet-api-types CHANGELOG
 
-#### 1.0.11
+#### 1.0.14
+
+- Made character achievement statistics "statistics" property an array.
+
+#### 1.0.12
 
 - Fixed issue with character achievement statistics "statistics" property in the wrong place.
 

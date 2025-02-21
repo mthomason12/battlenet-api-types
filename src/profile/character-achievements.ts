@@ -67,7 +67,7 @@ export interface characterAchievementStatisticsCategory {
         last_updated_timestamp: number;
         description?: string;
         quantity: number;
-    };
+    }[];
     sub_categories?: characterAchievementStatisticsCategory[];
 }
 
