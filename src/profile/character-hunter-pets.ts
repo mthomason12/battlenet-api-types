@@ -9,7 +9,7 @@ import { linksStruct, characterRef, refStruct, idkeyStruct } from "../shared";
 /**
  * Hunter Pets Summary 
  * 
- * /profile/wow/character/{realmSlug}/{characterName}
+ * /profile/wow/character/{realmSlug}/{characterName}/hunter-pets
  * @category Character Hunter Pets API
  */
 export interface APICharacterHunterPetsSummary {
