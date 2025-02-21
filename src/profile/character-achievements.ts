@@ -52,12 +52,6 @@ export interface characterAchievementCriteria
 export interface APICharacterAchievementsStatistics {
     _links: linksStruct;    
     character: characterRef;
-    statistics: {
-        id: number;
-        name: string;
-        last_updated_timestamp: number;
-        quantity: number;
-    };
     categories: characterAchievementStatisticsCategory[];
 }
 
@@ -67,6 +61,14 @@ export interface APICharacterAchievementsStatistics {
 export interface characterAchievementStatisticsCategory {
     id: number;
     name: string;
+    statistics?: {
+        id: number;
+        name: string;
+        last_updated_timestamp: number;
+        description?: string;
+        quantity: number;
+    };
     sub_categories?: characterAchievementStatisticsCategory[];
 }
+
 

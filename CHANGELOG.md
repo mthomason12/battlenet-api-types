@@ -1,5 +1,9 @@
 ### battlenet-api-types CHANGELOG
 
+#### 1.0.11
+
+- Fixed issue with character achievement statistics "statistics" property in the wrong place.
+
 #### 1.0.10
 
 - Added missing APIConduitIndex and APIConduit in Covenants API
