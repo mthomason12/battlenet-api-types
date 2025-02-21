@@ -110,6 +110,6 @@ export interface APICharacterTransmogCollectionSummary {
             type: string;
             name: string;
         }
-        appearances: refStruct;
+        appearances: refStruct[];
     }[];
 }
