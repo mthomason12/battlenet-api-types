@@ -16,14 +16,20 @@ export interface APICharacterAchievementsSummary {
     _links: linksStruct;
     total_quantity: number;
     total_points: number;
-    achievements: {
-        id: number;
-        achievement: refStruct;
-        criteria: characterAchievementCriteria[]
-        completed_timestamp: number;
-    };
+    achievements: characterAchievement[];
     character: characterRef;
     statistics: hrefStruct;
+}
+
+/**
+ * Part of {@link APICharacterAchievementsSummary}
+ * @category Character Achievements API
+ */
+export interface characterAchievement {
+    id: number;
+    achievement: refStruct;
+    criteria: characterAchievementCriteria[]
+    completed_timestamp: number;
 }
 
 /**
