@@ -4,4 +4,8 @@
 - Add Mythic Keystone Dungeon API
 - Add Mythic Keystone Leaderboard API
 - Add Mythic Raid Leaderboard API
-- Add Spell API
+- Add Talent API
+- Add Title API
+- Add Tech Talent API
+- Add Toy API
+- Add WoW Token API
