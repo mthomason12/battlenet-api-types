@@ -1,5 +1,11 @@
 ### battlenet-api-types CHANGELOG
 
+#### 1.1.0
+
+- Add Spell API
+- Add Title API
+- Add Talent API
+
 #### 1.0.14
 
 - Made character achievement statistics "statistics" property an array.
