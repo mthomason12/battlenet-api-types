@@ -1,5 +1,9 @@
 ### battlenet-api-types CHANGELOG
 
+#### 1.2.1
+
+- Extract various array types from their parents
+
 #### 1.2.0
 
 - Added WoW Token API
