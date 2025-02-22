@@ -17,12 +17,12 @@ export interface APICharacterProfileSummary {
     id: number;
     name: string;
     gender: genderStruct;
-    faction: factionStruct;
+    faction?: factionStruct;
     race: refStruct;
     character_class: refStruct;
-    active_spec: refStruct;
+    active_spec?: refStruct;
     realm: realmStruct;
-    guild: {
+    guild?: {
         key: hrefStruct;
         name: string;
         id: number;
@@ -50,13 +50,13 @@ export interface APICharacterProfileSummary {
     last_login_timestamp: number;
     average_item_level: number;
     equipped_item_level: number;
-    active_title: {
+    active_title?: {
         key: hrefStruct;
         name: string;
         id: number;
         display_string: string;
     }
-    covenant_progress: {
+    covenant_progress?: {
         chosen_covenant: refStruct;
         renown_level: number;
         soulbinds: hrefStruct;

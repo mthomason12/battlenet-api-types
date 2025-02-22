@@ -15,8 +15,8 @@ import { refStruct, idNameStruct, linksStruct, characterRef } from "../shared";
 export interface APICharacterProfessionsSummary {
     links: linksStruct;
     character: characterRef;
-    primaries: characterProfession[];
-    secondaries: characterProfession[];
+    primaries?: characterProfession[];
+    secondaries?: characterProfession[];
 }
 
 /**
