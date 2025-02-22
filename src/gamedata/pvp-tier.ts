@@ -44,6 +44,6 @@ export interface APIPvPTier {
  * /data/wow/media/pvp-tier/{pvpTierId} 
  * @category PvP Tier API
  */
-export interface APIPlayableClassMedia extends APIMediaStruct {
+export interface APIPvPTierMedia extends APIMediaStruct {
 }
 
