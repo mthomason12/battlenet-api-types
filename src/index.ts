@@ -28,6 +28,7 @@ export * from './gamedata/reputation';
 export * from './gamedata/spell';
 export * from './gamedata/title';
 export * from './gamedata/talent';
+export * from './gamedata/toy';
 export * from './gamedata/wowtoken';
 export * from './profile/account-profile';
 export * from './profile/character-achievements';
