@@ -61,24 +61,26 @@ export interface APICharacterMountsCollectionSummary {
  */
 export interface APICharacterPetsCollectionSummary {
     _links: linksStruct;
-    pets?: {
-        species: refStruct;
-        level: number;
-        quality: {
-            type: string;
-            name: string;
-        }
-        stats: {
-            breed_id: number;
-            health: number;
-            power: number;
-            speed: number;
-        }
+    pets?: characterPetsCollectionPet[];
+}
+
+export interface characterPetsCollectionPet{
+    species: refStruct;
+    level: number;
+    quality: {
+        type: string;
         name: string;
-        creature_display: idkeyStruct;
-        is_favorite?: boolean;
-        id: number;
-    }[];
+    }
+    stats: {
+        breed_id: number;
+        health: number;
+        power: number;
+        speed: number;
+    }
+    name: string;
+    creature_display: idkeyStruct;
+    is_favorite?: boolean;
+    id: number;
 }
 
 /**
@@ -89,10 +91,15 @@ export interface APICharacterPetsCollectionSummary {
  */
 export interface APICharacterToysCollectionSummary {
     _links: linksStruct;
-    toys?: {
-        toy: refStruct;
-        is_favorite?: boolean;
-    }[];
+    toys?: characterToysCollectionToy[];
+}
+
+/**
+ * @category Character Collections API
+ */
+export interface characterToysCollectionToy {
+    toy: refStruct;
+    is_favorite?: boolean;
 }
 
 
