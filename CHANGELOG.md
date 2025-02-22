@@ -1,5 +1,12 @@
 ### battlenet-api-types CHANGELOG
 
+#### 1.2.0
+
+- Added WoW Token API
+- Added Toy API
+- PvP Season API, PvP Tier API are now exported properly
+- Fixed error in PvP Tier Media API
+
 #### 1.1.2
 
 - Various properties marked optional

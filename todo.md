@@ -5,5 +5,3 @@
 - Add Mythic Keystone Leaderboard API
 - Add Mythic Raid Leaderboard API
 - Add Tech Talent API
-- Add Toy API
-- Add WoW Token API
