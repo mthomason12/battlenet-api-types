@@ -105,11 +105,16 @@ export interface APICharacterToysCollectionSummary {
 export interface APICharacterTransmogCollectionSummary {
     _links: linksStruct;
     appearance_sets?: refStruct[];
-    slots?: {
-        slot: {
-            type: string;
-            name: string;
-        }
-        appearances?: refStruct[];
-    }[];
+    slots?: characterTransmogCollectionSlot[];
+}
+
+/**
+ * @category Character Collections API
+ */
+export interface characterTransmogCollectionSlot {
+    slot: {
+        type: string;
+        name: string;
+    }
+    appearances?: refStruct[];
 }
