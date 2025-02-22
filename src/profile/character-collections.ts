@@ -30,7 +30,7 @@ export interface APICharacterCollectionsIndex {
  */
 export interface APICharacterHeirloomsCollectionSummary {
     _links: linksStruct;
-    heirlooms: {
+    heirlooms?: {
         heirloom: refStruct;
         upgrade: {
             level: number;
@@ -46,7 +46,7 @@ export interface APICharacterHeirloomsCollectionSummary {
  */
 export interface APICharacterMountsCollectionSummary {
     _links: linksStruct;
-    mounts: {
+    mounts?: {
         mount: refStruct;
         is_useable: boolean;
         is_favorite?: boolean;
@@ -61,7 +61,7 @@ export interface APICharacterMountsCollectionSummary {
  */
 export interface APICharacterPetsCollectionSummary {
     _links: linksStruct;
-    pets: {
+    pets?: {
         species: refStruct;
         level: number;
         quality: {
@@ -89,7 +89,7 @@ export interface APICharacterPetsCollectionSummary {
  */
 export interface APICharacterToysCollectionSummary {
     _links: linksStruct;
-    toys: {
+    toys?: {
         toy: refStruct;
         is_favorite?: boolean;
     }[];
@@ -104,12 +104,12 @@ export interface APICharacterToysCollectionSummary {
  */
 export interface APICharacterTransmogCollectionSummary {
     _links: linksStruct;
-    appearance_sets: refStruct[];
-    slots: {
+    appearance_sets?: refStruct[];
+    slots?: {
         slot: {
             type: string;
             name: string;
         }
-        appearances: refStruct[];
+        appearances?: refStruct[];
     }[];
 }

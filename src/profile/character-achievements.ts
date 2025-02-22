@@ -16,7 +16,7 @@ export interface APICharacterAchievementsSummary {
     _links: linksStruct;
     total_quantity: number;
     total_points: number;
-    achievements: characterAchievement[];
+    achievements?: characterAchievement[];
     character: characterRef;
     statistics: hrefStruct;
 }
@@ -52,7 +52,7 @@ export interface characterAchievementCriteria
 export interface APICharacterAchievementsStatistics {
     _links: linksStruct;    
     character: characterRef;
-    categories: characterAchievementStatisticsCategory[];
+    categories?: characterAchievementStatisticsCategory[];
 }
 
 /**

@@ -17,5 +17,5 @@ export interface APICharacterTitles {
     _links: linksStruct;
     character: characterRef;
     active_title?: refStruct;
-    titles: refStruct[];
+    titles?: refStruct[];
 }

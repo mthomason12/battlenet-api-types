@@ -18,7 +18,7 @@ export interface APICharacterMythicKeystoneProfileIndex {
     current_period: {
         period: idkeyStruct;
     }
-    seasons: idkeyStruct[];
+    seasons?: idkeyStruct[];
     character: characterRef;
     current_mythic_rating: {
         color: rgbaColorStruct;
