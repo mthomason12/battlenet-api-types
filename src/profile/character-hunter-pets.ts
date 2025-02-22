@@ -15,12 +15,17 @@ import { linksStruct, characterRef, refStruct, idkeyStruct } from "../shared";
 export interface APICharacterHunterPetsSummary {
     _links: linksStruct;
     character: characterRef;
-    hunter_pets: {
-        id: number;
-        name: string;
-        level: number;
-        creature: refStruct;
-        slot: number;
-        creature_display: idkeyStruct;
-    }[];
+    hunter_pets: characterHunterPet[];
+}
+
+/**
+ * @category Character Hunter Pets API
+ */
+export interface characterHunterPet {
+    id: number;
+    name: string;
+    level: number;
+    creature: refStruct;
+    slot: number;
+    creature_display: idkeyStruct;
 }
