@@ -30,12 +30,17 @@ export interface APICharacterCollectionsIndex {
  */
 export interface APICharacterHeirloomsCollectionSummary {
     _links: linksStruct;
-    heirlooms?: {
-        heirloom: refStruct;
-        upgrade: {
-            level: number;
-        }[];
-    }[]
+    heirlooms?: characterHeirloomsCollectionHeirloom[]
+}
+
+/**
+ * @category Character Collections API
+ */
+export interface characterHeirloomsCollectionHeirloom {
+    heirloom: refStruct;
+    upgrade: {
+        level: number;
+    }[];
 }
 
 /**
@@ -46,11 +51,16 @@ export interface APICharacterHeirloomsCollectionSummary {
  */
 export interface APICharacterMountsCollectionSummary {
     _links: linksStruct;
-    mounts?: {
-        mount: refStruct;
-        is_useable: boolean;
-        is_favorite?: boolean;
-    }[];
+    mounts?: characterMountsCollectionMount[];
+}
+
+/**
+ * @category Character Collections API
+ */
+export interface characterMountsCollectionMount {
+    mount: refStruct;
+    is_useable: boolean;
+    is_favorite?: boolean;
 }
 
 /**
@@ -64,6 +74,9 @@ export interface APICharacterPetsCollectionSummary {
     pets?: characterPetsCollectionPet[];
 }
 
+/**
+ * @category Character Collections API
+ */
 export interface characterPetsCollectionPet{
     species: refStruct;
     level: number;
