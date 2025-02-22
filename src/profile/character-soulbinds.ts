@@ -17,10 +17,12 @@ export interface APICharacterSoulbinds {
     character: characterRef;
     chosen_covenant: refStruct;
     renown_level: number;
-    soulbinds: {
-        soulbind: refStruct;
-        traits: (characterSoulbindTrait | characterSoulbindConduitSocket)[]
-    }[]
+    soulbinds: characterSoulbind[]
+}
+
+export interface characterSoulbind {
+    soulbind: refStruct;
+    traits: (characterSoulbindTrait | characterSoulbindConduitSocket)[]
 }
 
 /**
